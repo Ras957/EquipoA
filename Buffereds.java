@@ -23,8 +23,8 @@ public class Buffereds {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-      leerBufferedInputStream();
       leerBufferedOutputStream();
+      leerBufferedInputStream();
    }
     /*El objetivo de la clase BufferedInputStream es le mismo que el de la clase
     BufferedReader, la diferencia radica en que el tratamiento del información es
@@ -71,7 +71,7 @@ public class Buffereds {
         try{
             // BUFFEREDOUTPUTSTREAM
          // abrimos test2.txt para escribir en el archivo haciendo la conversion
-         bos = new BufferedOutputStream(new FileOutputStream("test2.txt"));
+         bos = new BufferedOutputStream(new FileOutputStream("test.txt"));
          // el texto a escribir será el siguiente:
          bos.write("Hola Mundo!".getBytes());
          bos.write(System.lineSeparator().getBytes());
