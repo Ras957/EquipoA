@@ -1,0 +1,10 @@
+Ejemplo DataInputStream
+En java existen ocho tipos de datos primitivos
+byte
+short
+int
+long
+float
+dobule
+char
+boolean que unicamente puede ser true o false
