@@ -20,7 +20,8 @@ public class ObjectStreamExample {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         /**
          * Uso de ObjectOutputStream:
-         * 
+         * es responsable de escribir el estado del objeto para su clase
+         * particular para que el método readObject correspondiente pueda restaurarlo
          */
         ObjectOutputStream oOS =
             new ObjectOutputStream(new FileOutputStream("person.bin"));
@@ -32,7 +33,11 @@ public class ObjectStreamExample {
         oOS.writeObject(person);
         oOS.close();
 
-
+        /**
+         * Uso de ObjectInputStream:
+         * deserializa datos primitivos y objetos previamente
+         * escritos usando un ObjectOutputStream.
+         */
         ObjectInputStream oIS =
             new ObjectInputStream(new FileInputStream("data/person.bin"));
 
