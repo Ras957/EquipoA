@@ -39,7 +39,7 @@ public class ObjectStreamExample {
          * escritos usando un ObjectOutputStream.
          */
         ObjectInputStream oIS =
-            new ObjectInputStream(new FileInputStream("data/person.bin"));
+            new ObjectInputStream(new FileInputStream("person.bin"));
 
         Person personRead = (Person) oIS.readObject();
 
